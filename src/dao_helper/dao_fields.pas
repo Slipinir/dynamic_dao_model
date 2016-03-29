@@ -10,7 +10,7 @@ uses
   name_list;
 
 type
-  TField = array[1..2] of String;
+  TField = array[0..1] of String;
   TFieldList = array of TField;
 
 const
@@ -32,6 +32,15 @@ procedure Add(Field: TField);
 begin
   SetLength(FieldList, Length(FieldList) + 1);
   FieldList[Length(FieldList) - 1] := Field;
+end;
+
+function FindByFieldName(const FieldName: String): TField;
+var
+  I: Integer;
+begin
+  for I := Low(FieldList) to High(FieldList) do
+    if (FieldList[I][0] = FieldName) then
+      Result := FieldList[I];
 end;
 
 initialization

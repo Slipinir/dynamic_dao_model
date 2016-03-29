@@ -23,7 +23,8 @@ uses
   integer_type,
   numeric_type,
   string_type,
-  boolean_type;
+  boolean_type,
+  dao_fields;
 
 initialization
   ProdutoCodigo := TIntegerType.Create(

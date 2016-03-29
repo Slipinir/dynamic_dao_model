@@ -7,7 +7,8 @@ interface
 uses
   Classes, SysUtils,
   type_enum,
-  basic_type_int;
+  basic_type_int,
+  dao_fields;
 
 type
 
