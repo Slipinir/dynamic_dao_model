@@ -1,4 +1,4 @@
-unit propriedade_string_class;
+unit string_type;
 
 {$mode objfpc}{$H+}
 

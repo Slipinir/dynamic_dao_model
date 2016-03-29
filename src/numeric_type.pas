@@ -1,4 +1,4 @@
-unit propriedade_numeric_class;
+unit numeric_type;
 
 {$mode objfpc}{$H+}
 

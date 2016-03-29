@@ -1,4 +1,4 @@
-unit propriedade_boolean_class;
+unit boolean_type;
 
 {$mode objfpc}{$H+}
 
