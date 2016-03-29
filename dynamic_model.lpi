@@ -47,15 +47,15 @@
         <IsPartOfProject Value="True"/>
       </Unit3>
       <Unit4>
-        <Filename Value="src/propriedade_string_class.pas"/>
+        <Filename Value="src/string_type.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit4>
       <Unit5>
-        <Filename Value="src/propriedade_boolean_class.pas"/>
+        <Filename Value="src/boolean_type.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit5>
       <Unit6>
-        <Filename Value="src/propriedade_numeric_class.pas"/>
+        <Filename Value="src/numeric_type.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit6>
       <Unit7>

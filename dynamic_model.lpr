@@ -7,8 +7,8 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Classes, SysUtils, CustApp, basic_type, type_enum,
-  integer_type, propriedade_string_class,
-  propriedade_boolean_class, propriedade_numeric_class, basic_type_int,
+  integer_type, string_type,
+  boolean_type, numeric_type, basic_type_int,
 integer_type_int, numeric_type_int, string_type_int, boolean_type_int
   { you can add units after this };
 
