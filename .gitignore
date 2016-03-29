@@ -3,5 +3,5 @@ lib/
 src/backup/
 *.bak
 *.exe
-color_register
+dynamic_model
 *.lps
