@@ -18,7 +18,7 @@ type
     function GetValue: Integer;
     procedure SetValue(const Value: Integer);
   public
-    constructor Create; override;
+    constructor Create(const AName, AField: String; const APersist: Boolean); override;
     property Value: Integer read GetValue write SetValue;
   end;
 
@@ -39,8 +39,10 @@ begin
   FIntegerValue := Value;
 end;
 
-constructor TIntegerType.Create;
+constructor TIntegerType.Create(const AName, AField: String;
+  const APersist: Boolean);
 begin
+  inherited Create(AName, AField, APersist);
   Kind := tpInteger;
 end;
 

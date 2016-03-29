@@ -18,7 +18,7 @@ type
     function GetValue: Double;
     procedure SetValue(const Value: Double);
   public
-    constructor Create; override;
+    constructor Create(const AName, AField: String; const APersist: Boolean); override;
     property Value: Double read GetValue write SetValue;
   end;
 
@@ -39,8 +39,10 @@ begin
   FDoubleValue := Value;
 end;
 
-constructor TNumericType.Create;
+constructor TNumericType.Create(const AName, AField: String;
+  const APersist: Boolean);
 begin
+  inherited Create(AName, AField, APersist);
   Kind := tpNumeric;
 end;
 

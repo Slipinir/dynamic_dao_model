@@ -6,18 +6,20 @@ interface
 
 uses
   Classes, SysUtils,
-  basic_type;
+  basic_type,
+  boolean_type_int;
 
 type
 
   { TBooleanType }
 
-  TBooleanType = class (TBasicType)
+  TBooleanType = class (TBasicType, IBooleanType)
   private
     function GetValue: Boolean;
     procedure SetValue(const Value: Boolean);
   public
-    constructor Create; override;
+    constructor Create(const AName, AField: String; const APersist: Boolean); override;
+    property Value: Boolean read GetValue write SetValue;
   end;
 
 implementation
@@ -37,8 +39,10 @@ begin
   FBooleanValue := Value;
 end;
 
-constructor TBooleanType.Create;
+constructor TBooleanType.Create(const AName, AField: String;
+  const APersist: Boolean);
 begin
+  inherited Create(AName, AField, APersist);
   Kind := tpBoolean;
 end;
 

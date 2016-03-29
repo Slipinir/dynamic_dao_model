@@ -18,7 +18,8 @@ type
     function GetValue: String;
     procedure SetValue(const Value: String);
   public
-    constructor Create; override;
+    constructor Create(const AName, AField: String; const APersist: Boolean); override;
+    property Value: String read GetValue write SetValue;
   end;
 
 implementation
@@ -38,8 +39,9 @@ begin
   FStringValue := Value;
 end;
 
-constructor TStringType.Create;
+constructor TStringType.Create(const AName, AField: String; const APersist: Boolean);
 begin
+  inherited Create(AName, AField, APersist);
   Kind := tpString;
 end;
 

@@ -6,10 +6,10 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Classes, SysUtils, CustApp, basic_type, type_enum,
-  integer_type, string_type,
-  boolean_type, numeric_type, basic_type_int,
-integer_type_int, numeric_type_int, string_type_int, boolean_type_int
+  Classes, SysUtils, CustApp, basic_type, type_enum, integer_type, string_type,
+  boolean_type, numeric_type, basic_type_int, integer_type_int,
+  numeric_type_int, string_type_int, boolean_type_int, model_fields, dao_fields,
+  field_name_list, name_list
   { you can add units after this };
 
 type
